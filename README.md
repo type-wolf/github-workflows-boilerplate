@@ -2,6 +2,25 @@
 
 ---
 
+### Commands that need to be defined in `packege.json`
+
+```json
+"scripts": {
+	"start:heroku": "node file.js",
+}
+```
+
+---
+
+### Files that need to be created
+
+```bash
+touch Procfile
+echo  web: npm run start:heroku > Procfile
+```
+
+---
+
 ### Environment variables that need to be set in Github
 
 1.  #### [`HEROKU_API_KEY`](https://dashboard.heroku.com/account) => APIKey for my Heroku account
